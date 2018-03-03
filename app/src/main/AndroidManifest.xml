@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hauday.hauday1">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.BIND_CARRIER_MESSAGING_SERVICE"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_RESPOND_VIA_MESSAGE"></uses-permission>
+    <permission
+        android:name="com.hauday.hauday1"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.vogella.android.locationapi.maps.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".Helper.GlobalState"
+        android:allowBackup="true"
+        android:icon="@drawable/kolo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".order_online"></activity>
+
+        <activity android:name=".Loginact"
+                    android:label="HauDay Cafe"
+
+            >
+        </activity>>
+
+
+        <activity android:name=".Signup"
+                    android:label="SignUp in Hauday Cafe">
+
+
+        </activity>
+        <activity android:name=".ViewMap"></activity>
+        <activity android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+<activity android:name=".Foodcontent"
+></activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCfm-5Mn8WI0svFOIMWHhW3uAuGFdBkAac" />
+    </application>
+
+</manifest>
